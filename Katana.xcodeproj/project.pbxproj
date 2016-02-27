@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D255CF31C82124A001E619C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D255CF21C82124A001E619C /* AppDelegate.swift */; };
+		0D255CF51C82124A001E619C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D255CF41C82124A001E619C /* ViewController.swift */; };
+		0D255CF81C82124A001E619C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D255CF61C82124A001E619C /* Main.storyboard */; };
+		0D255CFA1C82124A001E619C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D255CF91C82124A001E619C /* Assets.xcassets */; };
+		0D255CFD1C82124A001E619C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D255CFB1C82124A001E619C /* LaunchScreen.storyboard */; };
+		0D255D081C82124A001E619C /* KatanaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D255D071C82124A001E619C /* KatanaTests.swift */; };
+		0D255D131C82124A001E619C /* KatanaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D255D121C82124A001E619C /* KatanaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D255D041C82124A001E619C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D255CE71C82124A001E619C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D255CEE1C82124A001E619C;
+			remoteInfo = Katana;
+		};
+		0D255D0F1C82124A001E619C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D255CE71C82124A001E619C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D255CEE1C82124A001E619C;
+			remoteInfo = Katana;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D255CEF1C82124A001E619C /* Katana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Katana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D255CF21C82124A001E619C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D255CF41C82124A001E619C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D255CF71C82124A001E619C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D255CF91C82124A001E619C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D255CFC1C82124A001E619C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D255CFE1C82124A001E619C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D255D031C82124A001E619C /* KatanaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KatanaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D255D071C82124A001E619C /* KatanaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatanaTests.swift; sourceTree = "<group>"; };
+		0D255D091C82124A001E619C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D255D0E1C82124A001E619C /* KatanaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KatanaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D255D121C82124A001E619C /* KatanaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatanaUITests.swift; sourceTree = "<group>"; };
+		0D255D141C82124A001E619C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D255CEC1C82124A001E619C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D255D001C82124A001E619C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D255D0B1C82124A001E619C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D255CE61C82124A001E619C = {
+			isa = PBXGroup;
+			children = (
+				0D255CF11C82124A001E619C /* Katana */,
+				0D255D061C82124A001E619C /* KatanaTests */,
+				0D255D111C82124A001E619C /* KatanaUITests */,
+				0D255CF01C82124A001E619C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0D255CF01C82124A001E619C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D255CEF1C82124A001E619C /* Katana.app */,
+				0D255D031C82124A001E619C /* KatanaTests.xctest */,
+				0D255D0E1C82124A001E619C /* KatanaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D255CF11C82124A001E619C /* Katana */ = {
+			isa = PBXGroup;
+			children = (
+				0D255CF21C82124A001E619C /* AppDelegate.swift */,
+				0D255CF41C82124A001E619C /* ViewController.swift */,
+				0D255CF61C82124A001E619C /* Main.storyboard */,
+				0D255CF91C82124A001E619C /* Assets.xcassets */,
+				0D255CFB1C82124A001E619C /* LaunchScreen.storyboard */,
+				0D255CFE1C82124A001E619C /* Info.plist */,
+			);
+			path = Katana;
+			sourceTree = "<group>";
+		};
+		0D255D061C82124A001E619C /* KatanaTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D255D071C82124A001E619C /* KatanaTests.swift */,
+				0D255D091C82124A001E619C /* Info.plist */,
+			);
+			path = KatanaTests;
+			sourceTree = "<group>";
+		};
+		0D255D111C82124A001E619C /* KatanaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D255D121C82124A001E619C /* KatanaUITests.swift */,
+				0D255D141C82124A001E619C /* Info.plist */,
+			);
+			path = KatanaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D255CEE1C82124A001E619C /* Katana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D255D171C82124A001E619C /* Build configuration list for PBXNativeTarget "Katana" */;
+			buildPhases = (
+				0D255CEB1C82124A001E619C /* Sources */,
+				0D255CEC1C82124A001E619C /* Frameworks */,
+				0D255CED1C82124A001E619C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Katana;
+			productName = Katana;
+			productReference = 0D255CEF1C82124A001E619C /* Katana.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D255D021C82124A001E619C /* KatanaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D255D1A1C82124A001E619C /* Build configuration list for PBXNativeTarget "KatanaTests" */;
+			buildPhases = (
+				0D255CFF1C82124A001E619C /* Sources */,
+				0D255D001C82124A001E619C /* Frameworks */,
+				0D255D011C82124A001E619C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D255D051C82124A001E619C /* PBXTargetDependency */,
+			);
+			name = KatanaTests;
+			productName = KatanaTests;
+			productReference = 0D255D031C82124A001E619C /* KatanaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D255D0D1C82124A001E619C /* KatanaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D255D1D1C82124A001E619C /* Build configuration list for PBXNativeTarget "KatanaUITests" */;
+			buildPhases = (
+				0D255D0A1C82124A001E619C /* Sources */,
+				0D255D0B1C82124A001E619C /* Frameworks */,
+				0D255D0C1C82124A001E619C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D255D101C82124A001E619C /* PBXTargetDependency */,
+			);
+			name = KatanaUITests;
+			productName = KatanaUITests;
+			productReference = 0D255D0E1C82124A001E619C /* KatanaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D255CE71C82124A001E619C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Juan Beleño Díaz";
+				TargetAttributes = {
+					0D255CEE1C82124A001E619C = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					0D255D021C82124A001E619C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 0D255CEE1C82124A001E619C;
+					};
+					0D255D0D1C82124A001E619C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 0D255CEE1C82124A001E619C;
+					};
+				};
+			};
+			buildConfigurationList = 0D255CEA1C82124A001E619C /* Build configuration list for PBXProject "Katana" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D255CE61C82124A001E619C;
+			productRefGroup = 0D255CF01C82124A001E619C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D255CEE1C82124A001E619C /* Katana */,
+				0D255D021C82124A001E619C /* KatanaTests */,
+				0D255D0D1C82124A001E619C /* KatanaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D255CED1C82124A001E619C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D255CFD1C82124A001E619C /* LaunchScreen.storyboard in Resources */,
+				0D255CFA1C82124A001E619C /* Assets.xcassets in Resources */,
+				0D255CF81C82124A001E619C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D255D011C82124A001E619C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D255D0C1C82124A001E619C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D255CEB1C82124A001E619C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D255CF51C82124A001E619C /* ViewController.swift in Sources */,
+				0D255CF31C82124A001E619C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D255CFF1C82124A001E619C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D255D081C82124A001E619C /* KatanaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D255D0A1C82124A001E619C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D255D131C82124A001E619C /* KatanaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D255D051C82124A001E619C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D255CEE1C82124A001E619C /* Katana */;
+			targetProxy = 0D255D041C82124A001E619C /* PBXContainerItemProxy */;
+		};
+		0D255D101C82124A001E619C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D255CEE1C82124A001E619C /* Katana */;
+			targetProxy = 0D255D0F1C82124A001E619C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D255CF61C82124A001E619C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D255CF71C82124A001E619C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0D255CFB1C82124A001E619C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D255CFC1C82124A001E619C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D255D151C82124A001E619C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0D255D161C82124A001E619C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D255D181C82124A001E619C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Katana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuraiReader.Katana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0D255D191C82124A001E619C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Katana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuraiReader.Katana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0D255D1B1C82124A001E619C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KatanaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuraiReader.KatanaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Katana.app/Katana";
+			};
+			name = Debug;
+		};
+		0D255D1C1C82124A001E619C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KatanaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuraiReader.KatanaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Katana.app/Katana";
+			};
+			name = Release;
+		};
+		0D255D1E1C82124A001E619C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KatanaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuraiReader.KatanaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Katana;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		0D255D1F1C82124A001E619C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KatanaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SamuraiReader.KatanaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Katana;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D255CEA1C82124A001E619C /* Build configuration list for PBXProject "Katana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D255D151C82124A001E619C /* Debug */,
+				0D255D161C82124A001E619C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D255D171C82124A001E619C /* Build configuration list for PBXNativeTarget "Katana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D255D181C82124A001E619C /* Debug */,
+				0D255D191C82124A001E619C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0D255D1A1C82124A001E619C /* Build configuration list for PBXNativeTarget "KatanaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D255D1B1C82124A001E619C /* Debug */,
+				0D255D1C1C82124A001E619C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0D255D1D1C82124A001E619C /* Build configuration list for PBXNativeTarget "KatanaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D255D1E1C82124A001E619C /* Debug */,
+				0D255D1F1C82124A001E619C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D255CE71C82124A001E619C /* Project object */;
+}
