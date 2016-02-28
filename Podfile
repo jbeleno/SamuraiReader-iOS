@@ -1,19 +1,12 @@
 platform :ios, '8.0'
 use_frameworks!
 
-target 'Katana' do
-
-pod 'Alamofire', '~> 3.0'
-pod 'Gloss', '~> 0.7'
-pod 'SWRevealViewController', '~> 2.3'
-
+def shared_pods
+    pod 'Alamofire', '~> 3.0'
+    pod 'Gloss', '~> 0.7'
+    pod 'SWRevealViewController', '~> 2.3'
 end
 
-target 'KatanaTests' do
-
+target "Katana" do
+    shared_pods
 end
-
-target 'KatanaUITests' do
-
-end
-

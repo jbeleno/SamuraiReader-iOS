@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0D255CF31C82124A001E619C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D255CF21C82124A001E619C /* AppDelegate.swift */; };
-		0D255CF51C82124A001E619C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D255CF41C82124A001E619C /* HomeViewController.swift */; };
+		0D255CF51C82124A001E619C /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D255CF41C82124A001E619C /* ArticlesViewController.swift */; };
 		0D255CF81C82124A001E619C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D255CF61C82124A001E619C /* Main.storyboard */; };
 		0D255CFA1C82124A001E619C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D255CF91C82124A001E619C /* Assets.xcassets */; };
 		0D255CFD1C82124A001E619C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D255CFB1C82124A001E619C /* LaunchScreen.storyboard */; };
 		0D255D081C82124A001E619C /* KatanaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D255D071C82124A001E619C /* KatanaTests.swift */; };
 		0D255D131C82124A001E619C /* KatanaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D255D121C82124A001E619C /* KatanaUITests.swift */; };
-		7089F55B910E191765219ED1 /* Pods_Katana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E54E2CCD18F9D25BFF0F15E /* Pods_Katana.framework */; };
+		0D576CA91C838C4C00ADB271 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D576CA81C838C4C00ADB271 /* MenuTableViewController.swift */; };
+		55DFAA00536B291E26C27383 /* Pods_Katana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B1A5635B32FA69360EEDCD /* Pods_Katana.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		0D255CEF1C82124A001E619C /* Katana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Katana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D255CF21C82124A001E619C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D255CF41C82124A001E619C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0D255CF41C82124A001E619C /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		0D255CF71C82124A001E619C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D255CF91C82124A001E619C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D255CFC1C82124A001E619C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,9 +49,10 @@
 		0D255D0E1C82124A001E619C /* KatanaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KatanaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D255D121C82124A001E619C /* KatanaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatanaUITests.swift; sourceTree = "<group>"; };
 		0D255D141C82124A001E619C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D576CA81C838C4C00ADB271 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		19F6512E8A8C37732A408B35 /* Pods-Katana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katana.release.xcconfig"; path = "Pods/Target Support Files/Pods-Katana/Pods-Katana.release.xcconfig"; sourceTree = "<group>"; };
 		3048332E2627C248D3CA987B /* Pods-Katana.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katana.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Katana/Pods-Katana.debug.xcconfig"; sourceTree = "<group>"; };
-		8E54E2CCD18F9D25BFF0F15E /* Pods_Katana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Katana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B1A5635B32FA69360EEDCD /* Pods_Katana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Katana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7089F55B910E191765219ED1 /* Pods_Katana.framework in Frameworks */,
+				55DFAA00536B291E26C27383 /* Pods_Katana.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				0D255CF21C82124A001E619C /* AppDelegate.swift */,
-				0D255CF41C82124A001E619C /* HomeViewController.swift */,
+				0D255CF41C82124A001E619C /* ArticlesViewController.swift */,
 				0D255CF61C82124A001E619C /* Main.storyboard */,
+				0D576CA81C838C4C00ADB271 /* MenuTableViewController.swift */,
 				0D255CF91C82124A001E619C /* Assets.xcassets */,
 				0D255CFB1C82124A001E619C /* LaunchScreen.storyboard */,
 				0D255CFE1C82124A001E619C /* Info.plist */,
@@ -144,7 +147,7 @@
 		8BE9FDF84224FE4780024AD1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8E54E2CCD18F9D25BFF0F15E /* Pods_Katana.framework */,
+				33B1A5635B32FA69360EEDCD /* Pods_Katana.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -331,8 +334,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D255CF51C82124A001E619C /* HomeViewController.swift in Sources */,
+				0D255CF51C82124A001E619C /* ArticlesViewController.swift in Sources */,
 				0D255CF31C82124A001E619C /* AppDelegate.swift in Sources */,
+				0D576CA91C838C4C00ADB271 /* MenuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
