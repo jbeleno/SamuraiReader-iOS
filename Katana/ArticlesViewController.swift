@@ -13,6 +13,14 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak var lblMessage: UILabel!
+    
+    var refreshControl: UIRefreshControl!
+    
+    var section: String?
+    var model: ArticlesModel?
+    let cellIdentifier = "ArticleCell"
     
     
     override func viewDidLoad() {
@@ -28,6 +36,30 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         // Setup some thing from the table
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // Setup the refresh action
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = NSAttributedString(string: "Puxe para atualizar")
+        self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        self.tableView.addSubview(self.refreshControl)
+        
+        // This declare the default model if is not already set
+        if model != nil{
+            self.section = "Esportes"
+            model = ArticlesModel(section: self.section!)
+        }
+    }
+    
+    /**
+     * This method stop the animation of the refreshcontrol because could interfere with the
+     * UIActivityIndicator animation, clear the data source to start from scratch the data
+     * and populate the data source again with new data
+     **/
+    func refresh(sender:AnyObject)
+    {
+        self.refreshControl.endRefreshing()
+        model?.clearDataSource(self.tableView)
+        model?.populateWithDataSource(self.tableView, indicator: self.indicator, lblMessage: self.lblMessage)
     }
 
     override func didReceiveMemoryWarning() {
