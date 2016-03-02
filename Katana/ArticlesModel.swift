@@ -56,6 +56,8 @@ class ArticlesModel {
             argSection : section
         ]
         
+        print(parameters)
+        
         Alamofire.request(.POST, linkArticles, parameters: parameters as? [String : String]).responseJSON{
             response in
             
@@ -67,21 +69,15 @@ class ArticlesModel {
                 
                     if let status = response.objectForKey(self.paramStatus) as? String{
                         if status == self.paramOK {
-                            if let articles = response.objectForKey(self.paramArticles) as? [[String:String]]{
+                            
+                            let articles = response.objectForKey(self.paramArticles) as! NSArray
                                 
-                                for article in articles{
-                                    self.datasource.addObject(article)
-                                }
-                                
-                                self.offset++
-                                table.reloadData()
-                                
-                            }else{
-                                if(self.offset == 0){
-                                    lblMessage.hidden = false
-                                    lblMessage.text = self.errorMessage
-                                }
+                            for article in articles{
+                                self.datasource.addObject(article)
                             }
+                                
+                            self.offset++
+                            table.reloadData()
                         }else {
                             if(self.offset == 0){
                                 lblMessage.hidden = false

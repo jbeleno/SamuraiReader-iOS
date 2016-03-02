@@ -46,6 +46,10 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         
         // Load data for first time
         model.populateWithDataSource(self.tableView, indicator: indicator, lblMessage: lblMessage)
+        
+        // Row sizes in the tableView
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 180.0
     }
     
     /**
@@ -89,6 +93,8 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
             model.populateWithDataSource(self.tableView, indicator: indicator, lblMessage: lblMessage)
         }
         
+        print(indexPath.row)
+        
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ArticleTableViewCell
         
         // Configure the cell
@@ -97,6 +103,7 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         
         cell.title.text = Article?.title
         cell.mdescription.text = Article?.description
+        cell.mdescription.numberOfLines = 2
         cell.journal.text = Article?.journal
         
         return cell

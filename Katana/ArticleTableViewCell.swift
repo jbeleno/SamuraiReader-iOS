@@ -19,8 +19,6 @@ class ArticleTableViewCell: UITableViewCell {
     }
     
     override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
         // Configure the cell for selected state
     }
 }
