@@ -8,6 +8,7 @@
 
 import UIKit
 import SWRevealViewController
+import Gloss
 
 class ArticlesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -18,8 +19,8 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
     
     var refreshControl: UIRefreshControl!
     
-    var section: String?
-    var model: ArticlesModel?
+    var section = "Esportes"
+    var model = ArticlesModel(section: "Esportes")
     let cellIdentifier = "ArticleCell"
     
     
@@ -43,11 +44,8 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         self.tableView.addSubview(self.refreshControl)
         
-        // This declare the default model if is not already set
-        if model != nil{
-            self.section = "Esportes"
-            model = ArticlesModel(section: self.section!)
-        }
+        // Load data for first time
+        model.populateWithDataSource(self.tableView, indicator: indicator, lblMessage: lblMessage)
     }
     
     /**
@@ -58,8 +56,8 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
     func refresh(sender:AnyObject)
     {
         self.refreshControl.endRefreshing()
-        model?.clearDataSource(self.tableView)
-        model?.populateWithDataSource(self.tableView, indicator: self.indicator, lblMessage: self.lblMessage)
+        model.clearDataSource(self.tableView)
+        model.populateWithDataSource(self.tableView, indicator: self.indicator, lblMessage: self.lblMessage)
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,8 +65,41 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+    /**
+     * I'm going to use just a section with a big amount of cells in it
+     **/
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
+    }
+    
+    /**
+     * The number of rows in the section is determined by number of articles in the datasource
+     **/
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (self.model.datasource.count)
+    }
+    
+    /**
+     * Setting up the cell to be shown according to the position
+     **/
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        // If swift load the last row is because the user scrolls down until reach
+        // the bottom, then the app needs to load more info
+        if indexPath.row == (model.datasource.count - 1){
+            model.populateWithDataSource(self.tableView, indicator: indicator, lblMessage: lblMessage)
+        }
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! ArticleTableViewCell
+        
+        // Configure the cell
+        let ArticleItem = self.model.datasource.objectAtIndex(indexPath.row) as! JSON
+        let Article = ArticuloJSON(json: ArticleItem)
+        
+        cell.title.text = Article?.title
+        cell.mdescription.text = Article?.description
+        cell.journal.text = Article?.journal
+        
+        return cell
     }
     
 

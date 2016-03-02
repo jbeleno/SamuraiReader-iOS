@@ -9,14 +9,16 @@
 import Gloss
 
 struct ArticuloJSON:Decodable {
-    let title:String?
-    let description:String?
-    let link:String?
+    let title: String?
+    let description: String?
+    let link: String?
+    let journal: String?
     
     init?(json: JSON) {
         title = "title" <~~ json
         description = "description" <~~ json
         link = "link" <~~ json
+        journal = "journal" <~~ json
     }
     
 }

@@ -8,8 +8,19 @@
 import UIKit
 
 class ArticleTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var decorator: UIView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var mdescription: UILabel!
     @IBOutlet weak var journal: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    override func setSelected(selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the cell for selected state
+    }
 }
