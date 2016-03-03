@@ -469,11 +469,58 @@
                         <outlet property="lblMessage" destination="cIy-Qz-cGR" id="MWD-Pc-suW"/>
                         <outlet property="menuButton" destination="HTo-s1-9nX" id="9t3-2k-0bF"/>
                         <outlet property="tableView" destination="f3o-E5-Mgb" id="9DQ-63-RuI"/>
+                        <segue destination="jZH-L8-K7V" kind="show" identifier="DetailSegue" id="ohc-1z-8Ua"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m38-ny-717" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="979" y="-380"/>
+        </scene>
+        <!--Article View Controller-->
+        <scene sceneID="Ldz-9d-cTL">
+            <objects>
+                <viewController id="jZH-L8-K7V" customClass="ArticleViewController" customModule="Katana" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5bH-sb-ojl"/>
+                        <viewControllerLayoutGuide type="bottom" id="ah4-Nj-tCl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ncZ-b6-SeI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypl-pG-WBk">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="jZH-L8-K7V" id="9mO-5L-DFt"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="KjL-5P-jGu">
+                                <rect key="frame" x="290" y="96" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="ocE-vf-ivC"/>
+                                    <constraint firstAttribute="width" constant="20" id="uY8-u8-hOy"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ypl-pG-WBk" secondAttribute="trailing" id="3Y0-iD-ZkY"/>
+                            <constraint firstItem="ypl-pG-WBk" firstAttribute="leading" secondItem="ncZ-b6-SeI" secondAttribute="leading" id="OIu-za-HKv"/>
+                            <constraint firstItem="KjL-5P-jGu" firstAttribute="centerX" secondItem="ncZ-b6-SeI" secondAttribute="centerX" id="POi-aJ-3f9"/>
+                            <constraint firstItem="KjL-5P-jGu" firstAttribute="top" secondItem="5bH-sb-ojl" secondAttribute="bottom" constant="32" id="Uad-Mk-blo"/>
+                            <constraint firstItem="ypl-pG-WBk" firstAttribute="top" secondItem="5bH-sb-ojl" secondAttribute="bottom" id="kKf-h3-tei"/>
+                            <constraint firstItem="ah4-Nj-tCl" firstAttribute="top" secondItem="ypl-pG-WBk" secondAttribute="bottom" id="nuS-DL-69k"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicator" destination="KjL-5P-jGu" id="AJU-yI-2WI"/>
+                        <outlet property="webContainer" destination="ypl-pG-WBk" id="5UN-Dp-EU8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SsA-ph-Nta" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742" y="-380"/>
         </scene>
     </scenes>
     <resources>

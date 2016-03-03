@@ -16,6 +16,7 @@
 		0D576CA91C838C4C00ADB271 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D576CA81C838C4C00ADB271 /* MenuTableViewController.swift */; };
 		0D6580FB1C86330E006C03FB /* ArticleJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6580FA1C86330E006C03FB /* ArticleJSON.swift */; };
 		0D6580FE1C867E93006C03FB /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6580FD1C867E93006C03FB /* ArticleTableViewCell.swift */; };
+		0D840A821C87CEF60066A2AB /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D840A811C87CEF60066A2AB /* ArticleViewController.swift */; };
 		0DF2C8531C8511160026DD11 /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2C8521C8511160026DD11 /* ArticlesViewController.swift */; };
 		0DF2C8561C8518DF0026DD11 /* ArticlesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF2C8551C8518DF0026DD11 /* ArticlesModel.swift */; };
 		55DFAA00536B291E26C27383 /* Pods_Katana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B1A5635B32FA69360EEDCD /* Pods_Katana.framework */; };
@@ -54,6 +55,7 @@
 		0D576CA81C838C4C00ADB271 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		0D6580FA1C86330E006C03FB /* ArticleJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleJSON.swift; sourceTree = "<group>"; };
 		0D6580FD1C867E93006C03FB /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		0D840A811C87CEF60066A2AB /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		0DF2C8521C8511160026DD11 /* ArticlesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		0DF2C8551C8518DF0026DD11 /* ArticlesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesModel.swift; sourceTree = "<group>"; };
 		19F6512E8A8C37732A408B35 /* Pods-Katana.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Katana.release.xcconfig"; path = "Pods/Target Support Files/Pods-Katana/Pods-Katana.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				0D6580FC1C867A15006C03FB /* cells */,
 				0DF2C8541C8518BD0026DD11 /* models */,
 				0D255CF21C82124A001E619C /* AppDelegate.swift */,
+				0D840A811C87CEF60066A2AB /* ArticleViewController.swift */,
 				0DF2C8521C8511160026DD11 /* ArticlesViewController.swift */,
 				0D255CF61C82124A001E619C /* Main.storyboard */,
 				0D576CA81C838C4C00ADB271 /* MenuTableViewController.swift */,
@@ -361,6 +364,7 @@
 			files = (
 				0DF2C8531C8511160026DD11 /* ArticlesViewController.swift in Sources */,
 				0D255CF31C82124A001E619C /* AppDelegate.swift in Sources */,
+				0D840A821C87CEF60066A2AB /* ArticleViewController.swift in Sources */,
 				0D6580FB1C86330E006C03FB /* ArticleJSON.swift in Sources */,
 				0DF2C8561C8518DF0026DD11 /* ArticlesModel.swift in Sources */,
 				0D6580FE1C867E93006C03FB /* ArticleTableViewCell.swift in Sources */,
