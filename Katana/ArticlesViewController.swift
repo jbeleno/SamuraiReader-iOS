@@ -19,13 +19,20 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
     
     var refreshControl: UIRefreshControl!
     
-    var section = "Esportes"
+    var section: String?
     var model = ArticlesModel(section: "Esportes")
     let cellIdentifier = "ArticleCell"
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Rewrite the model according to the section
+        if(self.section != nil){
+            self.model = ArticlesModel(section: self.section!)
+        }else{
+            self.model = ArticlesModel(section: "Esportes")
+        }
 
         // This add the toogle effect on the hamburger icon
         if self.revealViewController() != nil {

@@ -9,6 +9,9 @@
 import UIKit
 
 class MenuTableViewController: UITableViewController {
+    
+    var section = "Esporte"
+    let segueIdentifier = "SectionSegue"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,68 +31,45 @@ class MenuTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return 7
     }
 
-    /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
+    /**
+     * This method set a section name according to the selection of the user in the menu
+     **/
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if (indexPath.row == 1) {
+            self.section = "Esportes"
+        } else if (indexPath.row == 2) {
+            self.section = "Política"
+        } else if (indexPath.row == 3) {
+            self.section = "Tecnologia"
+        } else if (indexPath.row == 4) {
+            self.section = "Internacional"
+        } else if (indexPath.row == 5) {
+            self.section = "Economia"
+        } else if (indexPath.row == 6) {
+            self.section = "Cotidiano"
+        }
+        
+        self.performSegueWithIdentifier(segueIdentifier, sender: self)
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    /**
+     * This method adds the section to the articles to load the right section when the user
+     * select a topic in the menu
+     **/
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let navController = segue.destinationViewController as! UINavigationController
+        
+        if(segue.identifier == segueIdentifier){
+            let view2load = navController.topViewController as! ArticlesViewController
+            view2load.section = self.section
+        }
     }
-    */
-
 }

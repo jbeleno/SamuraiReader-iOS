@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="-754" y="-380"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Menu Table View Controller-->
         <scene sceneID="Shm-W2-dvR">
             <objects>
-                <tableViewController id="j1X-rc-huP" sceneMemberID="viewController">
+                <tableViewController id="j1X-rc-huP" customClass="MenuTableViewController" customModule="Katana" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jMX-BJ-fuh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                         <sections>
                             <tableViewSection id="4Ot-dK-9aP">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="LTD-sa-zbA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="160" id="LTD-sa-zbA">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LTD-sa-zbA" id="vn0-gF-nhQ">
@@ -298,6 +298,9 @@
                             <outlet property="delegate" destination="j1X-rc-huP" id="ZTa-cE-qPu"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="gXv-aH-Vpv" kind="custom" identifier="SectionSegue" customClass="SWRevealViewControllerSeguePushController" id="gnL-aK-4qN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="knA-di-fAG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -483,4 +486,7 @@
         <image name="shake-hands" width="32" height="32"/>
         <image name="world" width="32" height="32"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gnL-aK-4qN"/>
+    </inferredMetricsTieBreakers>
 </document>

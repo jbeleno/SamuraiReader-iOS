@@ -56,11 +56,8 @@ class ArticlesModel {
             argSection : section
         ]
         
-        print(parameters)
-        
-        Alamofire.request(.POST, linkArticles, parameters: parameters as? [String : String]).responseJSON{
+        Alamofire.request(.POST, linkArticles, parameters: parameters as? [String : AnyObject], encoding: .JSON).responseJSON{
             response in
-            
             switch response.result {
                 case .Success(let JSON):
                     indicator.stopAnimating()
