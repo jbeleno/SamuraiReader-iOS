@@ -314,6 +314,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="afU-pj-1I4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -460,9 +461,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mkB-DJ-FA1">
-                        <barButtonItem key="leftBarButtonItem" image="menu-button" id="HTo-s1-9nX">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" image="menu-button" id="HTo-s1-9nX"/>
                     </navigationItem>
                     <connections>
                         <outlet property="indicator" destination="mWE-gs-VTE" id="tmw-sg-IYQ"/>
@@ -490,12 +489,12 @@
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ypl-pG-WBk">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="jZH-L8-K7V" id="9mO-5L-DFt"/>
                                 </connections>
                             </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="KjL-5P-jGu">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="KjL-5P-jGu">
                                 <rect key="frame" x="290" y="96" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="ocE-vf-ivC"/>

@@ -22,6 +22,8 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
     var section: String?
     var model = ArticlesModel(section: "Esportes")
     let cellIdentifier = "ArticleCell"
+    let segueIdentifier = "DetailSegue"
+    var link: String?
     
     
     override func viewDidLoad() {
@@ -113,5 +115,26 @@ class ArticlesViewController: UIViewController, UITableViewDataSource, UITableVi
         
         return cell
     }
+    
+    /**
+     * This method starts the segue to details of the article
+     **/
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let ArticleItem = self.model.datasource.objectAtIndex(indexPath.row) as! JSON
+        let Article = ArticuloJSON(json: ArticleItem)
+        
+        self.link = Article?.link
+        self.performSegueWithIdentifier(segueIdentifier, sender: self)
+    }
 
+    /**
+     * This method loads the link in other view inside a WebView
+     **/
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if(segue.identifier == segueIdentifier){
+            let view2load = segue.destinationViewController as! ArticleViewController
+            view2load.link = self.link
+        }
+    }
 }

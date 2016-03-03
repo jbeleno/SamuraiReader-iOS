@@ -18,6 +18,9 @@ class ArticleViewController: UIViewController, UIWebViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Remove the uppon bar inside the WebView
+        self.automaticallyAdjustsScrollViewInsets = false
+        
         loadPage(link!)
     }
     
@@ -25,8 +28,8 @@ class ArticleViewController: UIViewController, UIWebViewDelegate {
      * This method loads the website inside the WebView
      **/
     func loadPage(link:String){
-        let url = NSURL(fileURLWithPath: link)
-        let request = NSURLRequest(URL: url)
+        let url = NSURL(string: link)
+        let request = NSURLRequest(URL: url!)
         webContainer.loadRequest(request)
     }
     
